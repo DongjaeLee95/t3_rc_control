@@ -32,8 +32,8 @@ public:
     //frame_id definition how??
 
     //SHOULD BE FIXED
-    //Robotis_wing id = 0;
-    //Robotis_body id = 1;
+    //Robotis_wing id = "id_1";
+    //Robotis_body id = "id_2";
 
 protected:
     void ImuSensorCallBack(const sensor_msgs::Imu::ConstPtr& imu_msg);
