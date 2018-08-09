@@ -1,0 +1,12 @@
+<launch>
+
+	<include file="$(find microstrain_3dm_gx5_45)/launch/microstrain_25.launch" />
+
+	<include file="$(find dynamixel_workbench_controllers)/launch/position_control.launch" />
+
+	<include file="$(find t3_rc_control)/launch/t3_rc_control.launch">
+		<arg name="Robotis_wing_id" value="id_1"/>
+       		<arg name="Robotis_body_id" value="id_2"/>
+	</include>
+
+</launch>

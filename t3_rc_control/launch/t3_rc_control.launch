@@ -1,0 +1,11 @@
+<launch>
+    
+    <arg name="Robotis_wing_id" default="id_1"/>
+    <arg name="Robotis_body_id" default="id_2"/>
+
+    <node pkg = "t3_rc_control" name = "t3_rc_control" type = "t3_rc_control">
+       <param name="Robotis_wing_id" value="$(arg Robotis_wing_id)"/>
+       <param name="Robotis_body_id" value="$(arg Robotis_body_id)"/>
+    </node>
+
+</launch>
